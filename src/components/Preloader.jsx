@@ -34,15 +34,16 @@ export default function Preloader({ onComplete }) {
       className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-navy-950 text-white select-none"
     >
       <div className="relative flex flex-col items-center">
-        {/* Animated outer ring spinner */}
-        <motion.div
-          className="w-32 h-32 rounded-full border-4 border-t-gold-500 border-r-transparent border-b-maroon-800 border-l-transparent"
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 1.5, ease: 'linear' }}
-        />
+        {/* Spinner & Cap Container - Centered */}
+        <div className="relative w-32 h-32 flex items-center justify-center">
+          {/* Animated outer ring spinner */}
+          <motion.div
+            className="absolute inset-0 rounded-full border-4 border-t-gold-500 border-r-transparent border-b-maroon-800 border-l-transparent"
+            animate={{ rotate: 360 }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: 'linear' }}
+          />
 
-        {/* Animated graduation cap icon inside */}
-        <div className="absolute top-8 left-8 w-16 h-16 flex items-center justify-center">
+          {/* Animated graduation cap icon inside */}
           <motion.svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
