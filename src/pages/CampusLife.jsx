@@ -10,13 +10,13 @@ export default function CampusLife() {
       id: 1,
       title: 'Central Library Hall',
       category: 'Campus',
-      img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80',
+      img: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=800&q=80',
     },
     {
       id: 2,
       title: 'Convocation Ceremony 2025',
       category: 'Events',
-      img: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80',
+      img: 'https://images.unsplash.com/photo-1523580494863-6f303122450d?auto=format&fit=crop&w=800&q=80',
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ export default function CampusLife() {
       id: 4,
       title: 'Annual Football Championship',
       category: 'Sports',
-      img: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80',
+      img: 'https://images.unsplash.com/photo-1518063319789-7217e6706b04?auto=format&fit=crop&w=800&q=80',
     },
     {
       id: 5,
@@ -40,7 +40,7 @@ export default function CampusLife() {
       id: 6,
       title: 'Boys Hostel Courtyard',
       category: 'Campus',
-      img: 'https://images.unsplash.com/photo-1559135197-8a45ea74d56b?auto=format&fit=crop&w=800&q=80',
+      img: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80',
     },
     {
       id: 7,
