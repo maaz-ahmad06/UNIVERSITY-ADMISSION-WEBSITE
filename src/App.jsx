@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 // Components
 import Preloader from './components/Preloader';
@@ -107,14 +107,19 @@ function AppContent() {
       </AnimatePresence>
 
       {!loading && (
-        <div className="flex flex-col min-h-screen">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          className="flex flex-col min-h-screen"
+        >
           <ScrollToTop />
           <Navbar />
           <main className="flex-grow">
             <AnimatedRoutes />
           </main>
           <Footer />
-        </div>
+        </motion.div>
       )}
     </>
   );

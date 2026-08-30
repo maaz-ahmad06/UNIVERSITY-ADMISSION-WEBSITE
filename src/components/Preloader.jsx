@@ -27,7 +27,12 @@ export default function Preloader({ onComplete }) {
   }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-navy-950 text-white select-none">
+    <motion.div
+      initial={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5, ease: 'easeInOut' }}
+      className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-navy-950 text-white select-none"
+    >
       <div className="relative flex flex-col items-center">
         {/* Animated outer ring spinner */}
         <motion.div
@@ -91,6 +96,6 @@ export default function Preloader({ onComplete }) {
         {/* Progress Percent Text */}
         <span className="mt-2 text-xs font-mono text-gold-300">{progress}%</span>
       </div>
-    </div>
+    </motion.div>
   );
 }
