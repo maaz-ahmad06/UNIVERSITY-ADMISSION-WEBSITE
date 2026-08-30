@@ -16,7 +16,7 @@ export default function CampusLife() {
       id: 2,
       title: 'Convocation Ceremony 2025',
       category: 'Events',
-      img: 'https://images.unsplash.com/photo-1523580494863-6f303122450d?auto=format&fit=crop&w=800&q=80',
+      img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80',
     },
     {
       id: 3,
