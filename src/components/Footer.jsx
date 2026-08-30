@@ -8,7 +8,6 @@ import {
   FaGraduationCap,
   FaPhoneAlt,
   FaEnvelope,
-  FaMapMarkerAlt,
 } from 'react-icons/fa';
 
 export default function Footer() {

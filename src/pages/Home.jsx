@@ -7,7 +7,7 @@ import {
   FaBookOpen,
   FaCalendarAlt,
   FaClock,
-  FaGraduationCap,
+  FaEnvelope,
   FaMapMarkerAlt,
   FaPaperPlane,
   FaPhoneAlt,

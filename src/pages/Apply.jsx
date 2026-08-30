@@ -17,6 +17,7 @@ export default function Apply() {
   const [direction, setDirection] = useState(1); // 1 = forward, -1 = backward
   const [isSuccess, setIsSuccess] = useState(false);
   const [shake, setShake] = useState(false);
+  const [applicationId] = useState(() => Math.floor(1000 + Math.random() * 9000));
 
   const {
     register,
@@ -127,7 +128,7 @@ export default function Apply() {
 
           <div className="bg-navy-950 p-4 rounded-xl border border-navy-850 font-mono text-xs">
             <span className="text-gray-500 block">APPLICATION ID</span>
-            <span className="text-gold-500 font-bold text-lg">APEX-2026-{Math.floor(1000 + Math.random() * 9000)}</span>
+            <span className="text-gold-500 font-bold text-lg">APEX-2026-{applicationId}</span>
           </div>
 
           <a

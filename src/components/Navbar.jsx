@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { FaBars, FaTimes, FaGraduationCap } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,11 +18,6 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  // Close mobile menu on route change
-  useEffect(() => {
-    setIsOpen(false);
-  }, [location]);
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -158,6 +152,7 @@ export default function Navbar() {
                     <NavLink
                       key={link.name}
                       to={link.path}
+                      onClick={() => setIsOpen(false)}
                       className={({ isActive }) =>
                         `text-base font-semibold py-2 px-3 rounded-lg transition-colors ${
                           isActive
@@ -176,6 +171,7 @@ export default function Navbar() {
               <div className="pt-6 border-t border-navy-850">
                 <Link
                   to="/apply"
+                  onClick={() => setIsOpen(false)}
                   className="w-full block text-center bg-gradient-to-r from-maroon-800 to-maroon-700 text-white py-3 rounded-xl font-bold tracking-wider hover:from-maroon-700 hover:to-maroon-600 transition-colors shadow-lg shadow-maroon-950/50"
                 >
                   APPLY NOW

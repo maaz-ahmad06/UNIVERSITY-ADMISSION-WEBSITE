@@ -151,7 +151,7 @@ export default function Programs() {
         <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimatePresence mode="popLayout">
             {filteredPrograms.length > 0 ? (
-              filteredPrograms.map((prog, idx) => (
+              filteredPrograms.map((prog) => (
                 <motion.div
                   key={prog.id}
                   layout
